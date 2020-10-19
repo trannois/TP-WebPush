@@ -12,3 +12,6 @@ Pour le faire en dev, accecible sur localhost
 
     $ docker run -p 80:80 --rm --name test-webpush -v `pwd`:/opt/project node/webpush
     
+## Pour passer outre sous mozilla
+
+![option sous mozilla](./img/flag.png)

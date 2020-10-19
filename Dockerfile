@@ -9,9 +9,7 @@ RUN mkdir -p /opt/project
 
 COPY src /opt/project/src
 COPY public /opt/project/public
-
-
-
+COPY NOTversioned /opt/project/NOTversioned
 
 WORKDIR /opt/project/src
 ENTRYPOINT ["node", "app.js"]

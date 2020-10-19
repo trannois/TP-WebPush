@@ -1,2 +1,0 @@
-// Clef VAPID public
-const __ApplicationServerKey = "BLW78Nvoy3JJKw_2wT4uXmJIsTLSOiWUYpiqkcAR3ajhC-K_KVj7pA9njcbn4hWkZfPecGt9F7EciwRx1b6bGbw"

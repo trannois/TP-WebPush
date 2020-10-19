@@ -2,13 +2,20 @@ const express = require('express')
 const app = express()
 
 const util = require('./util')
+const vapidKeys = require('../NOTversioned/vapidKeys.js');
+
 const dbSub = require('./subscriptions.js');
 dbSub.initDb();
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
     res.send('Push App!')
+});
+
+app.get('/api/get-vapid-public-key', function (req, res) {
+    res.send({ vapidKey: vapidKeys.publicKey })
 });
 
 app.post('/api/save-subscription/', function (req, res) {
